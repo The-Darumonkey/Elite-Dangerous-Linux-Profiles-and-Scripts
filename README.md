@@ -1,7 +1,7 @@
 # Elite: Dangerous - Linux Profiles and Scripts
 ## A repo to hold Input Remapper profiles and scripts for joysticks and other devices 
 
-After losing scripts and other useful bits of Elite-related stuff during a reinstall (yes, I am an idiot), I decided to create this repository so I don't have to rewrite them all next time. My other repository is a personal fork of Input Remapper that spawns several virtual gamepads instead of just one, enabling multi-stick setup with response curves. This repo holds the Input Remapper profiles for my devices, my custom .binds file for Elite: Dangerous, and scripts for joystick wrangling with `evdev-joystick`. I reasoned that I might as well make the repo public as the files and infor contained here might be useful to others.
+After losing scripts and other useful bits of Elite-related stuff during a reinstall (yes, I am an idiot), I decided to create this repository so I don't have to rewrite them all next time. My other repository is a personal fork of Input Remapper that spawns several virtual gamepads instead of just one, enabling multi-stick setup with response curves. This repo holds the Input Remapper profiles for my devices, my custom .binds file for Elite: Dangerous, and scripts for joystick wrangling with `evdev-joystick`. I reasoned that I might as well make the repo public as the files and info contained here might be useful to others.
 
 The various files and their uses are explained below. 
 
