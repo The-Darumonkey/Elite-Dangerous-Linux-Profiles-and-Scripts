@@ -48,6 +48,6 @@ To get the rule working for your device, you will need to edit it.
 8. Save the file to `/etc/udev/rules.d/` as `99-joystick.rules`.
 
 ## Input Remapper profiles
-I can't vouch that these files will work on another machine, even if you have the exact same input device - I've never tried. Even if they don't work, you may find them useful to inspect
+I can't vouch that these files will work on another machine, even if you have the exact same input device - I've never tried. Even if they don't work, you may find them useful to inspect to inform your own choices when setting up your own device profiles.
 
 These are `.json` files.
