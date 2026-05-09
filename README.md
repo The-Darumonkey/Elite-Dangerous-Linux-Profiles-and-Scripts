@@ -8,8 +8,9 @@ This is a short Bash script that addresses issues with my joystick (a Winwing Ur
 
 You can see the values for your stick by running `evtest` and selecting the event ID of your device. Press Ctrl+C to stop the test and scroll up to see the axis values for your device. My device returns the following values for the X, Y and Z axes:
 
-`Fuzz           255
-Flat          4095`
+`Fuzz           255`
+
+`Flat          4095`
 
       
 This is much too large. You can set your desired values manually in the terminal with `evdev-joytsick`:
