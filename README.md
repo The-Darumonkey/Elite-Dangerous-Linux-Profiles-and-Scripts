@@ -55,8 +55,8 @@ I can't vouch that these files will work on another machine, even if you have th
 These `.json` files live in the respective folder for each device in `/home/<username>/.config/input-remapper-2/presets/`
 
 ### Profile details
-1. `Elite-SpacePilot` is a profile for my 3DConnexion SpacePilot Pro. It maps the 5 of the axes on the 6-axis puck to gamepad analogue axes, and the buttons to keystrokes. 
-2. `Elite-Tartarus-v2` is a profile for my Razer Tartarus v2 keypad. It remaps some of the default keys. I'll be working on a few macros (like docking request) over the coming weeks. 
+1. `Elite-SpacePilot` is a profile for the 3DConnexion SpacePilot Pro. It maps the 5 of the axes on the 6-axis puck to gamepad analogue axes, and the buttons to keystrokes. 
+2. `Elite-Tartarus-v2` is a profile for the Razer Tartarus v2 keypad (not Pro, not with optical switches). It remaps some of the default keys. I'll be working on a few macros (like docking request) over the coming weeks. 
 3. `Elite-Winwing` is a profile for my Winwing Ursa Minor R joystick. It remaps all the analogue axes (except the throttle slider because laziness) to virtual gamepad axes and the buttons on the right of the base to keystrokes.
 - `Elite-Winwing` includes a macro for maximising frag cannon ammunition when one of them has the corrosive special effect. Map the corrosive frag to the secondary fire key (KEY_APOSTROPHE on the profile here) and all other frags to the primary fire (KEY_SEMICOLON). The macro will fire the corrosive frag twice for every three shells fired on the other frags. This compensates for the 20% ammo reduction and extends your effective engagement time.  
 
