@@ -6,7 +6,7 @@ After losing scripts and other useful bits of Elite-related stuff during a reins
 The various files and their uses are explained below. 
 
 ## joystick-init.sh
-This is a short Bash script that addresses issues with my joystick (a Winwing Ursa Minor R) in Linux. There are no specific kernel drivers for it, so while it _is_ recognised as an input device with analogue axes, udev assumes it is a gamepad and sets _very_ conservative defaults, giving it a large deadzone that makes flying generally unpleasant and precision FA-off flying impossible. 
+This is a short Bash script that addresses issues with my joystick (a Winwing Ursa Minor R) in Linux. There are no specific kernel drivers for it, so while it _is_ recognised as an input device with analogue axes, udev assumes it is a gamepad and sets _very_ conservative defaults, giving it a large deadzone that makes flying generally unpleasant and precision FA-off flight impossible, especially with the Kestrel. 
 
 You can see the values for your stick by running `evtest` and selecting the event ID of your device. Press Ctrl+C to stop the test and scroll up to see the axis values for your device. My device returns the following values for the X, Y and Z axes:
 
