@@ -1,2 +1,3 @@
-# Replace the vendor ID (VID) and model ID (PID) with the relevant values found by running lsusb 
+# Replace the vendor ID (VID) and model ID (PID) with the relevant values found by running lsusb.
+# Make sure the RUN+= string matches the path and name of the Bash script EXACTLY.
 ACTION=="add", SUBSYSTEM=="input", ENV{ID_VENDOR_ID}=="4098", ENV{ID_MODEL_ID}=="bc2a", RUN+="/usr/local/bin/joystick-init.sh"
