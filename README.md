@@ -44,7 +44,7 @@ To get the rule working for your device, you will need to edit it.
 4. You need the vendor ID (VID) and product ID (PID) of your device. This is shown as two 4-character hex values in the `VID:PID` format.
 5. In my case, the VID is 4098 and the PID is bc2a - `4098:bc2a`.
 6. Replace these values in the rule with those from your device.
-7. Make sure that the filename specified after `RUN+=` EXACTLY matches the name of the Bash script you saved. 
+7. Make sure that the filename specified after `RUN+=` EXACTLY matches the name and path of the Bash script you saved. 
 8. Save the file to `/etc/udev/rules.d/` as `99-joystick.rules`.
 
 ## Input Remapper profiles
