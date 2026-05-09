@@ -51,3 +51,6 @@ To get the rule working for your device, you will need to edit it.
 I can't vouch that these files will work on another machine, even if you have the exact same input device - I've never tried. Even if they don't work, you may find them useful to inspect to inform your own choices when setting up your own device profiles.
 
 These are `.json` files. They live in the respective folder for each device in `/home/<username>/.config/input-remapper-2/presets/`
+
+## Custom.4.2.binds
+These are only included for me when/if I have to reinstall. You may find some benefit from inspecting them, I suppose. Yes, the bindings make no sense at all if you're playing with a keyboard. I don't care what key I'm pressing when I have a control mapped to a joystick emulating a keypress through Input Remapper. 
