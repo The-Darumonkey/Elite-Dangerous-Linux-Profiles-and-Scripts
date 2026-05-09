@@ -29,4 +29,4 @@ To get the rule working for your device, you will need to edit it.
 5. In my case, the VID is 4098 and the PID is bc2a - `4098:bc2a`.
 6. Replace these values with those from your device.
 7. Make sure that the filename specified after `RUN+=` matches the name of the Bash script you saved. 
-8. Save the file to `etc/udev/rules.d/` as `99-joystick.rules`.
+8. Save the file to `/etc/udev/rules.d/` as `99-joystick.rules`.
