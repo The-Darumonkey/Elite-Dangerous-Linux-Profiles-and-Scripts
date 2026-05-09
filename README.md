@@ -28,7 +28,7 @@ If you want to use this script on your own machine, you will need to edit it to 
 1. Navigate to `/dev/event/input/by-id`
 2. Find the device ID for your stick. There are multiple entries, each prefixed wuth `usb-` and with a different suffix (`-event-joystick`, `-hidraw` and `-joystick` on my system). You want to copy the name of the device with the `-event-joystick` suffix. Mine is `usb-Winwing_WINWING_URSA_MINOR_FIGHTER_FLIGHT_STICK_R_DCE860721456622163E650B2-event-joystick`. Yours will likely be different.
 3. Replace the ID in the script with the ID of your device.
-4. Save the file in `/usr/local/bin`
+4. Save the file in `/usr/local/bin/`
 5. You can name the script as you please, but this name must be reflected exactly in the `99-joystick.rules` file or it won't work.
 6. You must include the complementary `.rules` file or the script won't be triggered automatically.
 
