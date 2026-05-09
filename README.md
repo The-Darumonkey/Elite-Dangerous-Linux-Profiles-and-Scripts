@@ -50,7 +50,7 @@ To get the rule working for your device, you will need to edit it.
 8. Save the file to `/etc/udev/rules.d/` as `99-joystick.rules`.
 
 ## Input Remapper profiles
-I can't vouch that these files will work on another machine, even if you have the exact same input device - I've never tried. Even if they don't work, you may find it useful to inspect them to inform your choices when setting up your own device profiles. Remember that they depend on a modified fork of Input Remapper (in my other repo) that spawns 3 virtual gamepads instead of the usual 1. 
+I can't vouch that these files will work on another machine, even if you have the exact same input device - I've never tried. If they don't work, you might still find it useful to inspect them to inform your choices when setting up your own device profiles. Remember that they depend on a modified fork of Input Remapper (in my other repo) that spawns 3 virtual gamepads instead of the usual 1. 
 
 These `.json` files live in the respective folder for each device in `/home/<username>/.config/input-remapper-2/presets/`
 
