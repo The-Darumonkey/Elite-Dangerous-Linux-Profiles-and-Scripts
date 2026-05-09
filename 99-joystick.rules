@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="input", ENV{ID_VENDOR_ID}=="4098", ENV{ID_MODEL_ID}=="bc2a", RUN+="/usr/local/bin/joystick-init.sh"
