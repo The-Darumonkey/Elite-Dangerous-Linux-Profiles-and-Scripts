@@ -17,12 +17,12 @@ This is much too large. You can set your desired values manually in the terminal
 
 `sudo evdev-joystick --e /dev/input/event13 --f 0 --d 0`
 
-This sets the deadzone and fuzz values to zero. You may find some benefit in playing with the fuzz value if you have, say, a Thrustmaster T.16000M with a dodgy potentiometer on the yaw axis. 
+This sets the deadzone (`--d`, also known as `flat`) and fuzz (`--f`) values to zero. You may find some benefit in playing with the fuzz value if you have, say, a Thrustmaster T.16000M with a dodgy potentiometer on the yaw axis. 
 
-`joystick-init.sh` is a Bash script that automatically sets both the flat (deadzone) value and fuzz (event filtering) value to zero. I use Input Remapper to implement a response curve on the joystick and the stick's sensors are all Hall effect, so I don't need a deadzone or event filtering for noisy potentiometers.
+`joystick-init.sh` is a Bash script that automatically sets both the flat (deadzone) value and fuzz (event filtering) value to zero. I use Input Remapper to implement a response curve on the joystick and the stick's sensors are all Hall effect, so I don't need a deadzone or event filtering for noisy pots.
 
 ### Usage
-If you want to use this script on your own machine, you will need to edit the  script to reflect the input IDs of your peripheral(s).
+If you want to use this script on your own machine, you will need to edit it to reflect the input IDs of your peripheral(s).
 
 1. Navigate to `/dev/event/input/by-id`
 2. Find the device ID for your stick. There are multiple entries, each prefixed wuth `usb-` and with a different suffix (`-event-joystick`, `-hidraw` and `-joystick` on my system). You want to copy the name of the device with the `-event-joystick` suffix. Mine is `usb-Winwing_WINWING_URSA_MINOR_FIGHTER_FLIGHT_STICK_R_DCE860721456622163E650B2-event-joystick`. Yours will, of course, be different.
