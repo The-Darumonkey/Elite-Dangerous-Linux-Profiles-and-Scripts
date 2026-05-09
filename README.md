@@ -20,7 +20,7 @@ You may need to install `evdev-joystick` first. You can do this in Debian-based 
 
 Change the event ID to the event ID of your device, displayed when runnning `evtest`. This command sets the deadzone (`--d`, also known as `flat` in `evtest`) and fuzz (`--f`) values to zero. You may find some benefit in playing with the fuzz value if you have, say, a Thrustmaster T.16000M with a dodgy potentiometer on the yaw axis. 
 
-`joystick-init.sh` is a Bash script that automatically sets both the `flat` and `fuzz` values to zero. I use Input Remapper to implement a response curve on the joystick and the stick's sensors are all Hall effect, so I don't need a deadzone or event filtering for noisy pots.
+`joystick-init.sh` is a Bash script that automatically sets both the `flat` and `fuzz` values to zero. I use Input Remapper to implement a response curve on the joystick and the stick's axis sensors are all Hall effect, so I don't need a deadzone or event filtering for noisy pots.
 
 ### Usage
 If you want to use this script on your own machine, you will need to edit it to reflect the input IDs of your peripheral(s).
