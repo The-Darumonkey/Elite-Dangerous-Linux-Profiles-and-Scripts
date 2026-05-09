@@ -1,10 +1,38 @@
 # Elite-Dangerous---Linux-Profiles-and-Scripts
 A repo to hold Input Remapper profiles and scripts for joysticks and other devices 
 
-After losing scripts and other useful bits of Elite-related stuff during a reinstall, I decided to create this repository so I don't have to rewrite them all next time. My other repository is a personal fork of Input Remapper that spawns several virtual gamepads instead of just one, enabling multi-stick setup with response curves. This repo holds the config files for Input Remapper and scripts for joystick wrangling with evdev-joystick. 
+After losing scripts and other useful bits of Elite-related stuff during a reinstall, I decided to create this repository so I don't have to rewrite them all next time. My other repository is a personal fork of Input Remapper that spawns several virtual gamepads instead of just one, enabling multi-stick setup with response curves. This repo holds the config files for Input Remapper and scripts for joystick wrangling with `evdev-joystick`. 
 
 ## joystick-init.sh
-This is a short Bash script that addresses issues with my joystick (a Winwing Ursa Minor R) in Linux. There are no kernel drivers for it, so while it _is_ recognised as an input device with analogue axes, udev assumes it is a gamepad and sets _very_ conservative defaults, giving it a large deadzone that makes flying generally unpleasant and precision FA-off flying much harder. This script automatically sets both the flat (deadzone) value and fuzz (event filtering) value to zero. I use Input Remapper to implement a response curve on the joystick. The stick's sensors are all Hall effect. I don't need a deadzone or event filtering for noisy potentiometers.
+This is a short Bash script that addresses issues with my joystick (a Winwing Ursa Minor R) in Linux. There are no kernel drivers for it, so while it _is_ recognised as an input device with analogue axes, udev assumes it is a gamepad and sets _very_ conservative defaults, giving it a large deadzone that makes flying generally unpleasant and precision FA-off flying impossible. 
+
+You can see the values for your stick by running `evtest` and selecting the event ID of your device. Press Ctrl+C to stop the test and scroll up to see the axis values for your device. My device returns the following values for the X, Y and Z axes:
+`Event code 0 (ABS_X)
+      Value  32768
+      Min        0
+      Max    65535
+      Fuzz     255
+      Flat    4095
+    Event code 1 (ABS_Y)
+      Value  32768
+      Min        0
+      Max    65535
+      Fuzz     255
+      Flat    4095
+    Event code 2 (ABS_Z)
+      Value  32768
+      Min        0
+      Max    65535
+      Fuzz     255
+      Flat    4095`
+      
+This is much too large. You can set your desired values manually in the terminal with `evdev-joytsick`:
+
+`sudo evdev-joystick --e /dev/input/event13 --f 0 --d 0`
+
+This sets the deadzone and fuzz values to zero. You may find some benefit in playing with the fuzz value if you have, say, a Thrustmaster T16000.M with a dodgy potentiometer on the yaw axis. 
+
+`joystick-init.sh` is a Bash script that automatically sets both the flat (deadzone) value and fuzz (event filtering) value to zero. I use Input Remapper to implement a response curve on the joystick. The stick's sensors are all Hall effect. I don't need a deadzone or event filtering for noisy potentiometers.
 
 ### Usage
 If you want to use this script on your own machine, you will need to edit the  script to reflect the input IDs of your peripheral(s).
