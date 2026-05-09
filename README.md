@@ -39,7 +39,7 @@ This rule triggers `joystick-init.sh`, either during boot or when the joystick i
 To get the rule working for your device, you will need to edit it. 
 
 1. Open a terminal. Enter `lsusb`.
-2. In the list of USB devices, find the entry for your stick in the list.
+2. In the list of USB devices, find the entry for your stick.
 3. The entry will look something like this : `Bus 005 Device 003: ID 4098:bc2a Winwing WINWING URSA MINOR FIGHTER FLIGHT STICK R`
 4. You need the vendor ID (VID) and product ID (PID) of your device. This is shown as two 4-character hex values in the `VID:PID` format.
 5. In my case, the VID is 4098 and the PID is bc2a - `4098:bc2a`.
