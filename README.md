@@ -12,7 +12,7 @@ You can see the values for your stick by running `evtest` and selecting the even
 
 `Flat          4095`
       
-These are much too large. You can set your desired values manually in the terminal with `evdev-joytsick`:
+These are much too large. You can set your desired values manually in the terminal with `evdev-joystick`:
 
 `sudo evdev-joystick --e /dev/input/event13 --f 0 --d 0`
 
