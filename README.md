@@ -1,7 +1,7 @@
 # Elite: Dangerous - Linux Profiles and Scripts
 ## A repo to hold Input Remapper profiles and scripts for joysticks and other devices 
 
-After losing scripts and other useful bits of Elite-related stuff during a reinstall (yes, I am an idiot), I decided to create this repository so I don't have to rewrite them all next time. My other repository is a personal fork of Input Remapper that spawns several virtual gamepads instead of just one, enabling multi-stick setup with response curves. This repo holds the Input Remapper profiles for my devices, my custom .binds file for Elite: Dangerous, and scripts for joystick wrangling with `evdev-joystick`. I reasoned that I might as well make the repo public as the files and info contained here might be useful to others.
+After losing scripts and other useful bits of Elite-related stuff during a reinstall (yes, I am an idiot), I decided to create this repository so I don't have to rewrite them all next time. My other repository is a personal fork of Input Remapper that spawns several virtual gamepads instead of just one, enabling multi-stick setup with response curves. This repo holds the Input Remapper profiles for my devices, my custom `.binds` file for Elite: Dangerous, and scripts for joystick wrangling with `evdev-joystick`. I reasoned that I might as well make the repo public as the files and info contained here might be useful to others.
 
 The various files and their uses are explained below. 
 
@@ -57,8 +57,8 @@ These `.json` files live in the respective folder for each device in `/home/<use
 ### Profile details
 1. `Elite-SpacePilot` is a profile for my 3DConnexion SpacePilot Pro. It maps the 5 of the axes on the 6-axis puck to gamepad analogue axes, and the buttons to keystrokes. 
 2. `Elite-Tartarus-v2` is a profile for my Razer Tartarus v2 keypad. It remaps some of the default keys. I'll be working on a few macros (like docking request) over the coming weeks. 
-3. `Elite-Winwing` is a profile for my Winwing Ursa Minor R joystick. It remaps all the analogue axes (except the throttle slider because laziness) to virtual gamepad axes and the buttons on the right of the base to keystrokes. 
-It includes a macro for maximising frag cannon ammunition when one of them has the corrosive special effect. Map the corrosive frag to the secondary fire key (my default is KEY_APOSTROPHE) and all other frags to the primary fire (KEY_SEMICOLON). The macro will fire the corrosive frag twice for every three shells fired on the other frags. This compensates for the 20% ammo reduction and extends your effective engagement time.  
+3. `Elite-Winwing` is a profile for my Winwing Ursa Minor R joystick. It remaps all the analogue axes (except the throttle slider because laziness) to virtual gamepad axes and the buttons on the right of the base to keystrokes.
+- `Elite-Winwing` includes a macro for maximising frag cannon ammunition when one of them has the corrosive special effect. Map the corrosive frag to the secondary fire key (my default is KEY_APOSTROPHE) and all other frags to the primary fire (KEY_SEMICOLON). The macro will fire the corrosive frag twice for every three shells fired on the other frags. This compensates for the 20% ammo reduction and extends your effective engagement time.  
 
 ## Custom.4.2.binds
 These are only included for me when/if I have to reinstall. You may find some benefit from inspecting them, I suppose. Yes, the bindings make no sense at all if you're playing with a keyboard. I don't care what key I'm pressing when I have a control mapped to a joystick emulating a keypress through Input Remapper. 
