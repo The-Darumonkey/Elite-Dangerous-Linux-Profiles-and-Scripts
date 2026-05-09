@@ -1,0 +1,274 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 3,
+                "code": 0,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "gamepad2",
+        "output_type": 3,
+        "output_code": 0,
+        "mapping_type": "analog",
+        "deadzone": 0.01,
+        "gain": 2.0,
+        "expo": 0.75
+    },
+    {
+        "input_combination": [
+            {
+                "type": 3,
+                "code": 1,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "gamepad2",
+        "output_type": 3,
+        "output_code": 1,
+        "mapping_type": "analog",
+        "deadzone": 0.01,
+        "gain": 2.0,
+        "expo": 0.75
+    },
+    {
+        "input_combination": [
+            {
+                "type": 3,
+                "code": 2,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "gamepad2",
+        "output_type": 3,
+        "output_code": 3,
+        "mapping_type": "analog",
+        "deadzone": 0.01,
+        "gain": 2.0,
+        "expo": 0.75
+    },
+    {
+        "input_combination": [
+            {
+                "type": 3,
+                "code": 5,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "gamepad2",
+        "output_type": 3,
+        "output_code": 4,
+        "mapping_type": "analog",
+        "deadzone": 0.01,
+        "gain": 2.0,
+        "expo": 0.75
+    },
+    {
+        "input_combination": [
+            {
+                "type": 3,
+                "code": 3,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "gamepad3",
+        "output_type": 3,
+        "output_code": 0,
+        "mapping_type": "analog",
+        "deadzone": 0.01,
+        "gain": 2.0,
+        "expo": 0.75
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 279,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "7",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 281,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "8",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 278,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "9",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 280,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "0",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 286,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_MINUS",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 285,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_EQUAL",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 266,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_TAB",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 284,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KP_Insert",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 283,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KP_Delete",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 282,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KP_End",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 261,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KP_Left",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 257,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KP_Begin",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 265,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KP_Next",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 271,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KP_Home",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 270,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KP_Up",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 256,
+                "origin_hash": "a5d42a6d415be03aa3507a14401503ba"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_BACKSLASH",
+        "mapping_type": "key_macro"
+    }
+]
