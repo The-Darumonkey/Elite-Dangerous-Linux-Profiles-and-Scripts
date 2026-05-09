@@ -12,15 +12,15 @@ You can see the values for your stick by running `evtest` and selecting the even
 
 `Flat          4095`
       
-These values are much too large. You can set your desired values manually in the terminal with `evdev-joytsick`:
+These are much too large. You can set your desired values manually in the terminal with `evdev-joytsick`:
 
 `sudo evdev-joystick --e /dev/input/event13 --f 0 --d 0`
 
 You may need to install `evdev-joystick` first. You can do this in Debian-based distros with `sudo apt install joystick`. 
 
-Change the event ID to the event ID of your device, displayed when runnning `evtest`. This command sets the deadzone (`--d`, also known as `flat` in `evtest`) and fuzz (`--f`) values to zero. You may find some benefit in playing with the fuzz value if you have, say, a Thrustmaster T.16000M with a dodgy potentiometer on the yaw axis. 
+Make sure to change the event ID to the event ID of your device, displayed when runnning `evtest`. This command sets the deadzone (`--d`, also known as `flat` in `evtest`) and fuzz (`--f`) values to zero. You may find some benefit in playing with the fuzz value if you have, say, a Thrustmaster T.16000M with a dodgy potentiometer on the yaw axis. I use Input Remapper to implement a response curve on the joystick and the stick's axis sensors are all Hall effect, so I don't need a deadzone or filtering for noisy pots.
 
-`joystick-init.sh` is a Bash script that automatically sets both the `flat` and `fuzz` values to zero. I use Input Remapper to implement a response curve on the joystick and the stick's axis sensors are all Hall effect, so I don't need a deadzone or event filtering for noisy pots.
+While the `evdev-joystick` approach works, it is suboptimal in that you must run it every time you plug the joystick in or turn your PC on, which gets old pretty quickly. `joystick-init.sh` is a Bash script that automatically sets both the `flat` and `fuzz` values to zero. It uses by-id symlinks to sidestep the issue where event IDs can - and do - often change. 
 
 ### Usage
 If you want to use this script on your own machine, you will need to edit it to reflect the input IDs of your peripheral(s).
