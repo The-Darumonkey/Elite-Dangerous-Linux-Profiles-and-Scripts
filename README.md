@@ -34,7 +34,7 @@ If you want to use this script on your own machine, you will need to edit it to 
 5. You can name the script as you please, but this name must be reflected exactly in the `99-joystick.rules` file or it won't work.
 6. You must include the complementary `99-joystick.rules` file for the script to be triggered automatically. If you don't include it, you'll have to navigate to `/usr/local/bin/` and trigger the script manually. This is about saving time.
 
-## 99-joystick.rules
+## Taming your joystick 2: 99-joystick.rules
 This rule triggers `joystick-init.sh`, either during boot or when the joystick is connected. In other words, when you plug in your joystick - or turn on your machine with the joystick plugged in - `evdev-joystick` will run and your desired `deadzone (--d)` and `fuzz (--f)` values will be applied automatically. 
 
 ### Usage
