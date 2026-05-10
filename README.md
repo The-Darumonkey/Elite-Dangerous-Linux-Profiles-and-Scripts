@@ -20,7 +20,7 @@ These are much too large. You can set your desired values manually in the termin
 
 You may need to install `evdev-joystick` first. You can do this in Debian-based distros with `sudo apt install joystick`. 
 
-Make sure to change the event ID to the one associated with your device (displayed when runnning `evtest`). The `evdev-joystick` command above sets the deadzone (`--d`, also known as `flat` in `evtest`) and fuzz (`--f`) values to zero. You may find some benefit in playing with the fuzz value if you have, say, a Thrustmaster T.16000M with a dodgy potentiometer on the yaw axis. I use Input Remapper to implement a response curve on my joystick and the stick's axis sensors are all Hall effect, so I need neither a deadzone nor filtering for noisy pots, hence the zeros.
+Make sure to change the event ID to the one associated with your device (displayed when runnning `evtest`). The `evdev-joystick` command above sets the deadzone (`--d`, also known as `flat` in `evtest`) and fuzz (`--f`) values to zero. You may find some benefit in experimenting with the fuzz value if you have, say, a Thrustmaster T.16000M with a dodgy potentiometer on the yaw axis. I use Input Remapper to implement a response curve on my joystick and the stick's axis sensors are all Hall effect, so I need neither a deadzone nor filtering for noisy pots, hence the zeros.
 
 While the approach of using `evdev-joystick` in the terminal works, it is suboptimal in that you must run it every time you plug in the joystick or turn on your PC, which gets old pretty quickly. `joystick-init.sh` automatically sets both the `deadzone (flat)` and `fuzz` values to zero. It uses `by-id` symlinks to sidestep the issue where event IDs can - and do - often change. 
 
