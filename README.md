@@ -35,7 +35,7 @@ If you want to use this script on your own machine, you will need to edit it to 
 6. You must include the complementary `99-joystick.rules` file for the script to be triggered automatically. If you don't include it, you'll have to navigate to `/usr/local/bin/` and trigger the script manually. This is about saving time.
 
 ## 99-joystick.rules
-This rule triggers `joystick-init.sh`, either during boot or when the joystick is connected. In other words, when you plug in your joystick - or turn on your machine with the joystick plugged in - your desired deadzone and fuzz values will be applied automatically. 
+This rule triggers `joystick-init.sh`, either during boot or when the joystick is connected. In other words, when you plug in your joystick - or turn on your machine with the joystick plugged in - your desired `deadzone` and `fuzz` values will be applied automatically. 
 
 ### Usage
 To get the rule working for your device, you will need to edit it. 
