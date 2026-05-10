@@ -8,7 +8,7 @@ The various files and their uses are explained below.
 ## Taming your joystick: joystick-init.sh
 This is a short Bash script that addresses issues with my joystick (a Winwing Ursa Minor R) in Linux, although the general approach should apply for any device with analogue axes that doesn't have sane defaults. At the time of writing, there are no specific kernel drivers for the Ursa Minor (or, I suspect, any Winwing device), so while it is recognised as an input device with analogue axes, udev assumes it is a gamepad (with 40-odd buttons!) and sets _very_ conservative defaults, giving it a large deadzone that makes flying generally unpleasant and precision FA-off flight impossible, especially with the Kestrel. 
 
-You can see the values for your stick by running `evtest` and selecting the event ID of your device. Press Ctrl+C to stop the test and scroll up to see the axis values for your device. On my machine, `evtest` returns the following values for the X, Y and Z axes on my Ursa Minor:
+You can see the values for your stick by running `evtest` and selecting the event ID of your device. Press Ctrl+C ASAP to stop the test and scroll right up to the top to see the axis values for your device. On my machine, `evtest` returns the following values for the X, Y and Z axes on my Ursa Minor:
 
 `Fuzz           255`
 
